@@ -1,0 +1,13 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+<div class="task-detail">
+    <div class="task">
+        <img src="{{task.thumb.url}}" />
+        <h2>{{task.title}}</h2>
+        <h3>Written by {{ task.author.username }}</h3>
+        <p>{{task.Description}}</p>
+        <p>Task Created On : {{task.date}}</p>
+    </div>
+</div>
+{% endblock %}
